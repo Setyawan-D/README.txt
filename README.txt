@@ -59,7 +59,41 @@ The program will print out:
 The total value right now is: $10000
 
 If you chose the "Remove book" option, when you enter x = 0, y = 0
+It will remove the board at [0][0] which will resulted on:
 
+ | _ | _ | _ |  
+ | _ | _ | _ |  
+ | _ | _ | _ |  
+The total value right now is: $0
+
+If you chose the third option, when you enter x = 0, y = 0
+It will print out:
+
+The title of the book is: User input
+The author of the book is: User
+The value of the book is : $10000
+The year the book was made: 2019
+The amount of pages it has: 4029
+
+ | U | _ | _ |  
+ | _ | _ | _ |  
+ | _ | _ | _ |  
+
+If you chose the fourth option, when you enter x = 0, y = 0
+It will print an error saying that the position has already been filled and will reprompt you.
+When you enter x = 0, y = 1, it will print out:
+ 
+ | U | R | _ |  
+ | _ | _ | _ |  
+ | _ | _ | _ |  
+
+If you chose the fifth option, when you enter x = 0, y = 0
+It will prompt for another x and y coordinate to where you want it to be moved. E.g x = 2 y = 0
+
+ | _ | R | _ |  
+ | _ | _ | _ |  
+ | U | _ | _ |  
+ 
 If the board is filled out, The program will give you a different menu
 
  | U | U | U |  
