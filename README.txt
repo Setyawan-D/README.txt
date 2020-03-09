@@ -58,6 +58,8 @@ The program will print out:
  | _ | _ | _ |  => ([2][0] [2][1] [2][2])
 The total value right now is: $10000
 
+If you chose the "Remove book" option, when you enter x = 0, y = 0
+
 If the board is filled out, The program will give you a different menu
 
  | U | U | U |  
