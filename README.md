@@ -11,11 +11,11 @@ Instructions:
 
 1) Compile the program with:
 
-g++ assign5_treasure.cpp
+g++ -o assign5_treasure assign5_treasure.cpp
 
 2) Run the program with:
 
-./a.out
+./assign5_treasure
 
 3) You will be asked to Enter how many rows and columns as the dimension of the chest. After you have filled the dimension, the program will present you with a menu and you will choose one of them.
 
@@ -53,15 +53,17 @@ Enter the amount of pages it has: 4029
 
 In this example of a 3x3 board,
 The program will print out: 
- | U | _ | _ |  => ([0][0] [0][1] [0][2])(This won't be printed out)
+ | U | _ | _ |  => ([0][0] [0][1] [0][2]) (This won't be printed out)
  | _ | _ | _ |  => ([1][0] [1][1] [1][2])
  | _ | _ | _ |  => ([2][0] [2][1] [2][2])
+The total value right now is: $10000
 
 If the board is filled out, The program will give you a different menu
 
  | U | U | U |  
  | U | U | U |  
  | U | U | U |  
+The total value right now is: $90000
  
 The program will display a menu of:
  
