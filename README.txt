@@ -110,7 +110,6 @@ The program will display a menu of:
 
 4) Limitations:
 - If you enter a string of characters into the value of the book, year, and pages, the program will encounter an error and you will have to manually stop it with Ctrl+C.
-- The program does not let you inspect a book that is empty and you can't return to the main menu. Manually stop the program with Ctrl+C.
 
 5) Extra credit:
 - The program will give different menus depending on the board.
