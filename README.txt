@@ -1,118 +1,49 @@
 Name: Darian W. Setyawan
 ONID: 933-965-815
-Section: CS 161-020
-Assignment 5 Due Date: 3/8/2020
+Section: CS 162-020
+Assignment 5 Due Date: 6/7/2020
 
 Description:
 
-Welcome to the Treasure Chest of Books! You can add your own book to the chest at anytime, remove it, inspect it, generate a random book, or switch books position with one another. Your goal is to fill the chest with books as your own collection. Good Luck!
+This program is an implementation of linked list. Its purpose is to test the function that interacts with the linked list.
 
 Instructions:
 
 1) Compile the program with:
 
-g++ -o assign5_treasure assign5_treasure.cpp
+make (type "make" in the command line)
 
 2) Run the program with:
 
-./assign5_treasure
+./test_linked_list
 
-3) You will be asked to Enter how many rows and columns as the dimension of the chest. After you have filled the dimension, the program will present you with a menu and you will choose one of them.
+3) You will only need to press enter during this test and observe what's happening in each function.
 
-The menu choices that will be presented are:
-1: Add a book
-2: Remove a book
-3: Inspect a book
-4: Generate a random book
-5: Switch book positions
-6: Exit.
+The first function that we will test is the get_length() function.
+This function serves to get the length of the current list.
 
-If you select "Add a book", the program will display:
+The second function that we will test is the push_front() function.
+This function serves to add a node at the front of the list.
 
-Enter the x coordinate:
-Enter the y coordinate:
+The third function is the push_back() function.
+This function serves to add a node at the end of the list.
 
-Note that your coordinates can't be below 0 or above the given dimension. For this example we will go with x = 0, y = 0
-Enter the x coordinate: 0
-Enter the y coordinate: 0
+The fourth function is the insert() function.
+This function serves to add a node at the desired index (or position) of the list.
 
-After you have filled the coordinate the program will ask you:
+The fifth function is the sort_ascending() function.
+This function serves to sort the list in an ascending order.
+The sorting algorithm used in this function is the merge sort algorithm with time complexity of O(n log n).
 
-Enter a random number between 1-5:
+The sixth function is the sort descending() function.
+This function serves to sort the list in a descending order.
+The sorting algorith used in this function is the merge sort algorithm with time complexity of O(n log n).
 
-If you guess the secret random number correctly, the value of your next book will be doubled!
-If not, then nothing happens and it will continue.
+The seventh function is the count_prime() function.
+This function serves to find how many prime numbers exist in the list.
 
-The program will then ask you to enter the descriptions of the book.
+The eight and the last function is the clear() function.
+This function serves to delete all of the content inside the list.
 
-Enter the title of the book: User input
-Enter the author of the book: User
-Enter the value of the book: $10000
-Enter the year it was made: 2019
-Enter the amount of pages it has: 4029
+Limitations:
 
-In this example of a 3x3 board,
-The program will print out: 
- | U | _ | _ |  => ([0][0] [0][1] [0][2]) (This won't be printed out)
- | _ | _ | _ |  => ([1][0] [1][1] [1][2])
- | _ | _ | _ |  => ([2][0] [2][1] [2][2])
-The total value right now is: $10000
-
-If you chose the "Remove book" option, when you enter x = 0, y = 0
-It will remove the board at [0][0] which will resulted on:
-
- | _ | _ | _ |  
- | _ | _ | _ |  
- | _ | _ | _ |  
-The total value right now is: $0
-
-If you chose the third option, when you enter x = 0, y = 0
-It will print out:
-
-The title of the book is: User input
-The author of the book is: User
-The value of the book is : $10000
-The year the book was made: 2019
-The amount of pages it has: 4029
-
- | U | _ | _ |  
- | _ | _ | _ |  
- | _ | _ | _ |  
-
-If you chose the fourth option, when you enter x = 0, y = 0
-It will print an error saying that the position has already been filled and will reprompt you.
-When you enter x = 0, y = 1, it will print out:
- 
- | U | R | _ |  
- | _ | _ | _ |  
- | _ | _ | _ |  
-
-If you chose the fifth option, when you enter x = 0, y = 0
-It will prompt for another x and y coordinate to where you want it to be moved. E.g x = 2 y = 0
-
- | _ | R | _ |  
- | _ | _ | _ |  
- | U | _ | _ |  
- 
-If the board is filled out, The program will give you a different menu
-
- | U | U | U |  
- | U | U | U |  
- | U | U | U |  
-The total value right now is: $90000
- 
-The program will display a menu of:
- 
-2: Remove a book
-3: Inspect a book
-5: Switch book positions
-6: Exit.
-
-4) Limitations:
-- If you enter a string of characters into the value of the book, year, and pages, the program will encounter an error and you will have to manually stop it with Ctrl+C.
-
-5) Extra credit:
-- The program will give different menus depending on the board.
-- Added a luck aspect to the game in the add book part.
-- Asked another person.
-- Described one improvement in my word file.
