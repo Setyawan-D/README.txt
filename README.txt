@@ -5,19 +5,22 @@ Assignment 5 Due Date: 6/7/2020
 
 Description:
 
-This program is an implementation of linked list. Its purpose is to test the function that interacts with the linked list.
+This program is an implementation of a linked list. Its purpose is to test the function that interacts with the linked list.
 
 Instructions:
 
-1) Compile the program with:
+1) Extract the file using "tar -xvf assign5.tar"
+   This will extract all the files within the tar file
+
+2) Compile the program with:
 
 make (type "make" in the command line)
 
-2) Run the program with:
+3) Run the program with:
 
 ./test_linked_list
 
-3) You will only need to press enter during this test and observe what's happening in each function.
+4) You will only need to press enter during this test and observe what's happening in each function.
 
 The first function that we will test is the get_length() function.
 This function serves to get the length of the current list.
@@ -47,3 +50,16 @@ This function serves to delete all of the content inside the list.
 
 Limitations:
 
+There is no way to go back to the function before, only with restarting the program.
+The program will execute the function only if you press enter when you're prompted to.
+The program may run a bit slower if the list is very big.
+
+Extra Credit:
+
+None
+
+Complexity analysis:
+
+A. sort_ascending() => Merge Sort algorithm with time complexity of O(n log n)
+B. sort_descending() => Merge Sort algorithm with time complexity of O(n log n)
+C. count_prime() => Non-modifying sequence modifications with time complexity of O(n)
